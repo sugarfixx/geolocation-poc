@@ -18,6 +18,7 @@ class Datacenter
     {
         $this->location = new Location($ip);
         $this->loadDatacenters();
+        $this->setOrderedList();
     }
 
     public function loadDatacenters()
@@ -68,6 +69,4 @@ class Datacenter
     {
         $this->closestDataCenter = $closestDataCenter;
     }
-
-
 }
